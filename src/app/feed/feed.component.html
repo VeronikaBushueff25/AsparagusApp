@@ -1,0 +1,7 @@
+<h2>Лента любителей спаржи</h2>
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.lastasparagusdate | date:'dd.MM.yyyy HH:mm' }} {{ user.name }} ел спаржу уже {{ user.asparaguscount }} раз
+  </li>
+</ul>
+<a routerLink="/">Вернуться к форме</a>

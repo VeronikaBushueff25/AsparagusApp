@@ -1,0 +1,141 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('p_O.jpg');
+  background-size: cover; /* Позволяет изображению заполнять весь заданный контейнер */
+  background-position: center; /* Центрирует изображение по центру экрана */
+  background-repeat: no-repeat; /* Предотвращает повторение изображения */
+
+}
+/* Стили для контейнера div с полями ввода */
+form div {
+  margin-bottom: 15px;
+}
+
+/* Стили для меток label */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Стили для полей ввода input */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #bfc7c5;
+  border-radius: 10px;
+  background: #d5d5d5;
+  box-sizing: border-box;
+}
+
+/* Убираем стандартные браузерные стили фокуса на полях ввода */
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #5d8b60;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+/* Стили для заголовков и форм */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid #abb1b1;
+    border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #bfc7c5;
+  text-align: center;
+  animation: fadeInUp 0.5s ease; /* Применение анимации */
+}
+
+button[type="submit"] {
+  background-color: #5d8b60;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #436b45;
+}
+/* Стили для списка ul */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto; /* центрируем список */
+  max-width: 600px; /* максимальная ширина списка */
+  animation: fadeIn 0.5s ease-out both;
+}
+
+/* Стили для элементов списка li */
+li {
+background-color: #b4c1be;
+border-radius: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease; /* плавное изменение фона */
+}
+
+/* Псевдокласс hover для элементов списка li */
+li:hover {
+border-radius: 20px;
+  background-color: #cad1cc; /* изменение фона при наведении */
+}
+
+/* Стили для ссылки routerLink */
+a[routerLink] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #436546; /* синий цвет (можно изменить на ваш выбор) */
+  text-decoration: none;
+  transition: color 0.3s ease; /* плавное изменение цвета текста */
+  text-shadow: -1px -1px 0 #fff,  
+                1px -1px 0 #fff,
+               -1px  1px 0 #fff,
+                1px  1px 0 #fff;
+}
+
+/* Псевдокласс hover для ссылки routerLink */
+a[routerLink]:hover {
+  color: #314933; /* изменение цвета текста при наведении */
+}
+/* Простая анимация */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
